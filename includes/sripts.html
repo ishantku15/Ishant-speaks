@@ -1,0 +1,21 @@
+<!-- Animation JS -->
+<script src="{{ "/assets/js/animations.js" | relative_url }}"></script>
+
+<!-- Main JS -->
+<script src="{{ "/assets/js/main.js" | relative_url }}"></script>
+
+<!-- Netlify Identity Widget -->
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+<script>
+  // Initialize Netlify Identity
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>

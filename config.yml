@@ -1,0 +1,37 @@
+# Site settings
+title: Ishant Speaks
+email: ishant150407@gmail.com
+description: >- 
+  Personal blog by Ishant Kumar sharing thoughts on technology, programming, and life experiences. 
+  SEO optimized articles with modern web development insights.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://ishantku15.github.io" # the base hostname & protocol for your site
+github_username: ishantku15
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# SEO Settings
+seo:
+  title: Ishant Speaks | Tech Blog & Personal Thoughts
+  description: Personal blog by Ishant Kumar sharing thoughts on technology, programming, and life experiences.
+  keywords: ["tech blog", "programming", "web development", "jekyll", "netlify cms", "github pages"]
+  author: Ishant Kumar
+  social:
+    twitter: ""
+    github: ishantku15
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - admin/config.yml
